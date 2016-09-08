@@ -1,0 +1,18 @@
+---
+title: "실습 hw1"
+author: "Jiwon Jung"
+date: "2016년 9월 8일"
+output: html_document
+---
+
+
+R 내장 데이터셋 airquality에서 다음 선형회귀모형을 적합한 결과이다.
+$$Ozone=Wind+\epsilon $$
+
+```{r}
+
+attach(airquality)
+summary(lm(Ozone~Wind))
+
+```
+
